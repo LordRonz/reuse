@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import type { NextPage } from 'next';
 
+import Layout from '@/components/layout/Layout';
 import ArrowLink from '@/components/links/ArrowLink';
 import ButtonLink from '@/components/links/ButtonLink';
 import CustomLink from '@/components/links/CustomLink';
@@ -9,10 +10,10 @@ import Seo from '@/components/Seo';
 
 const Home: NextPage = () => {
   return (
-    <>
+    <Layout>
       <Seo />
       <main>
-        <section className='bg-black text-primary-50'>
+        <section className='bg-black'>
           <div className='layout flex min-h-screen flex-col items-center justify-center text-center'>
             <h1>Next.js + Tailwind CSS + TypeScript Starter</h1>
             <p className='mt-2 text-sm text-primary-50'>
@@ -51,7 +52,7 @@ const Home: NextPage = () => {
           </div>
         </section>
       </main>
-    </>
+    </Layout>
   );
 };
 

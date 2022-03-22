@@ -7,10 +7,10 @@ const NotFound: NextPage = () => (
   <>
     <Seo templateTitle='Not Found' />
     <main>
-      <section className='bg-black text-primary-50'>
+      <section className='bg-black'>
         <div className='layout flex min-h-screen flex-col items-center justify-center gap-y-40 text-center'>
           <div className='flex flex-col gap-y-4'>
-            <h1 className='text-8xl text-primary-300'>404</h1>
+            <h1 className='text-8xl text-red-500'>404</h1>
             <h2>Page Not Found</h2>
           </div>
 
