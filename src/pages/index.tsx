@@ -13,7 +13,7 @@ const Home: NextPage = () => {
     <Layout>
       <Seo />
       <main>
-        <section className='bg-black text-primary-50'>
+        <section className='bg-black'>
           <div className='layout flex min-h-screen flex-col items-center justify-center text-center'>
             <h1>Next.js + Tailwind CSS + TypeScript Starter</h1>
             <p className='mt-2 text-sm text-primary-50'>

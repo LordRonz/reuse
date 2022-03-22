@@ -5,23 +5,27 @@
 :root {
   /* Customize these variable */
   /* https://github.com/adamwathan/tailwind-css-variable-text-opacity-demo */
-  --tw-clr-primary-50: 255 209 209;
-  --tw-clr-primary-100: 255 154 154;
-  --tw-clr-primary-200: 250 128 114;
-  --tw-clr-primary-300: 235 39 84;
-  --tw-clr-primary-400: 223 40 0;
-  --tw-clr-primary-500: 153 35 35;
-  --tw-clr-primary-600: 128 0 0;
-  --tw-clr-primary-700: 105 0 0;
+  --tw-clr-primary-50: 146 246 175;
+  --tw-clr-primary-100: 113 243 151;
+  --tw-clr-primary-200: 80 240 127;
+  --tw-clr-primary-300: 47 237 103;
+  --tw-clr-primary-400: 18 230 81;
+  --tw-clr-primary-500: 16 197 69;
+  --tw-clr-primary-600: 13 164 57;
+  --tw-clr-primary-700: 10 131 46;
+  --tw-clr-primary-800: 8 98 34;
+  --tw-clr-primary-900: 5 65 23;
 
-  --clr-primary-50: rgb(var(--tw-clr-primary-50)); /* #ffd1d1 */
-  --clr-primary-100: rgb(var(--tw-clr-primary-100)); /* #ff9a9a */
-  --clr-primary-200: rgb(var(--tw-clr-primary-200)); /* #fa8072 */
-  --clr-primary-300: rgb(var(--tw-clr-primary-300)); /* #eb2754 */
-  --clr-primary-400: rgb(var(--tw-clr-primary-400)); /* #df2800 */
-  --clr-primary-500: rgb(var(--tw-clr-primary-500)); /* #992323 */
-  --clr-primary-600: rgb(var(--tw-clr-primary-600)); /* #800000 */
-  --clr-primary-700: rgb(var(--tw-clr-primary-700)); /* #690000 */
+  --clr-primary-50: rgb(var(--tw-clr-primary-50)); /* #92f6af */
+  --clr-primary-100: rgb(var(--tw-clr-primary-100)); /* #71f397 */
+  --clr-primary-200: rgb(var(--tw-clr-primary-200)); /* #50f07f */
+  --clr-primary-300: rgb(var(--tw-clr-primary-300)); /* #2fed67 */
+  --clr-primary-400: rgb(var(--tw-clr-primary-400)); /* #12e651 */
+  --clr-primary-500: rgb(var(--tw-clr-primary-500)); /* #10c545 */
+  --clr-primary-600: rgb(var(--tw-clr-primary-600)); /* #0da439 */
+  --clr-primary-700: rgb(var(--tw-clr-primary-700)); /* #0a832e */
+  --clr-primary-700: rgb(var(--tw-clr-primary-800)); /* #086222 */
+  --clr-primary-700: rgb(var(--tw-clr-primary-900)); /* #054117 */
 }
 
 @layer base {
