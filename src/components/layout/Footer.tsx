@@ -58,6 +58,9 @@ const Footer = () => {
   return (
     <footer className='mt-4 pb-2'>
       <main className='layout flex flex-col items-center border-t pt-6 dark:border-gray-600'>
+        <div className='mb-4'>
+          <h3 className='text-gray-300'>Recycle Made Easy</h3>
+        </div>
         <div className='mt-2 flex space-x-4'>
           <div className='flex items-center justify-center'>
             <TooltipTippy
