@@ -112,5 +112,5 @@ export default function Header({ large = false }: HeaderProps) {
 
 const links = [
   { href: '/', label: 'Home' },
-  { href: '/about', label: 'About' },
+  { href: '/classify', label: 'Classify' },
 ];
