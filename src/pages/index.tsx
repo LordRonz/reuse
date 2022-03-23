@@ -7,7 +7,7 @@ import Layout from '@/components/layout/Layout';
 import ArrowLink from '@/components/links/ArrowLink';
 import Seo from '@/components/Seo';
 
-import risaikuru_logo from '../../public/risaikuru_trans.png';
+import risaikuru_logo from '../../public/risaikuru_trans_dark.png';
 
 const Home: NextPage = () => {
   return (
