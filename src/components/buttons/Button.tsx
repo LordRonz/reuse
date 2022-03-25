@@ -41,7 +41,7 @@ const Button = ({
           variant === 'primary' && [
             'bg-primary-300 text-black',
             'border border-primary-500',
-            'hover:bg-primary-500 hover:text-primary-50',
+            'hover:bg-primary-500 hover:text-white',
             'active:bg-primary-600',
             'disabled:bg-primary-300 disabled:hover:bg-primary-300 disabled:hover:text-black',
           ],
