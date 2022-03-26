@@ -15,3 +15,4 @@ export const DEFAULT_TOAST_MESSAGE = {
 };
 
 export const toastStyle = { background: '#333', color: '#eee' };
+export const toastStyleLight = { background: '#eee', color: '#333' };

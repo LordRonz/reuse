@@ -1,17 +1,21 @@
 import axios from 'axios';
 import type { NextPage } from 'next';
+import { useTheme } from 'next-themes';
 import { useCallback, useState } from 'react';
 import { useDropzone } from 'react-dropzone';
 import toast, { Toaster } from 'react-hot-toast';
 import { FiUpload } from 'react-icons/fi';
+import Swal from 'sweetalert2';
+import withReactContent from 'sweetalert2-react-content';
 
 import Button from '@/components/buttons/Button';
-import { toastStyle } from '@/components/constant/toast';
+import { toastStyle, toastStyleLight } from '@/components/constant/toast';
 import DragNDrop from '@/components/DragNDrop';
 import Layout from '@/components/layout/Layout';
 import Seo from '@/components/Seo';
 
 const SUPPORTED_IMAGE_TYPES = ['image/jpeg', 'image/png', 'image/gif'];
+const MeSwal = withReactContent(Swal);
 
 type API_RESPONSE = [
   {
@@ -25,6 +29,7 @@ type API_RESPONSE = [
 ];
 
 const Classify: NextPage = () => {
+  const { theme } = useTheme();
   const [selectedFile, setSelectedFile] = useState<File>();
 
   const onUpload = (files?: FileList | File[] | null) => {
@@ -69,9 +74,18 @@ const Classify: NextPage = () => {
     toast.promise(axios.post<API_RESPONSE>('/api/classify', formData), {
       loading: 'Loading...',
       success: ({ data }) => {
-        console.log(data);
-        if (data[0].probability > data[1].probability) return data[0].className;
-        return data[1].className;
+        const result =
+          data[0].probability > data[1].probability
+            ? data[0].className
+            : data[1].className;
+        MeSwal.fire({
+          title: 'Result',
+          text: `It is ${result}!`,
+          color: theme === 'dark' ? '#ddd' : '#111',
+          confirmButtonColor: '#71f397',
+          background: theme === 'dark' ? '#111' : '#ddd',
+        });
+        return result;
       },
       error: (err: Error) => {
         if (axios.isAxiosError(err)) {
@@ -106,7 +120,7 @@ const Classify: NextPage = () => {
       </main>
       <Toaster
         toastOptions={{
-          style: toastStyle,
+          style: theme === 'dark' ? toastStyle : toastStyleLight,
           loading: {
             iconTheme: {
               primary: '#71f397',
