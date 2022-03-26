@@ -66,23 +66,20 @@ const Classify: NextPage = () => {
     }
     const formData = new FormData();
     formData.append('image', selectedFile);
-    toast.promise(
-      axios.post<API_RESPONSE>(`http://20.231.52.92/classify`, formData),
-      {
-        loading: 'Loading...',
-        success: ({ data }) => {
-          if (data[0].probability > data[1].probability)
-            return data[0].className;
-          return data[1].className;
-        },
-        error: (err: Error) => {
-          if (axios.isAxiosError(err)) {
-            return err.response?.data.message ?? err.message;
-          }
-          return 'Error occured';
-        },
-      }
-    );
+    toast.promise(axios.post<API_RESPONSE>('/api/classify', formData), {
+      loading: 'Loading...',
+      success: ({ data }) => {
+        console.log(data);
+        if (data[0].probability > data[1].probability) return data[0].className;
+        return data[1].className;
+      },
+      error: (err: Error) => {
+        if (axios.isAxiosError(err)) {
+          return err.response?.data.message ?? err.message;
+        }
+        return err.message;
+      },
+    });
   };
 
   return (
