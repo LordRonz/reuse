@@ -4,6 +4,8 @@ import formidable, { IncomingForm } from 'formidable';
 import { promises as fs } from 'fs';
 import type { NextApiRequest, NextApiResponse } from 'next';
 
+import { API_ADDRESS } from '@/components/constant/backend';
+
 export const config = {
   api: {
     bodyParser: false,
@@ -53,7 +55,7 @@ const handler = async (
       mimetype: img.mimetype,
     };
     const response = await axios.post<API_RESPONSE>(
-      'http://20.231.52.92/classify/buffer',
+      `${API_ADDRESS}/classify/buffer`,
       body
     );
     res.json(response.data);
