@@ -8,6 +8,7 @@ import { FiUpload } from 'react-icons/fi';
 import Swal from 'sweetalert2';
 import withReactContent from 'sweetalert2-react-content';
 
+import Accent from '@/components/Accent';
 import Button from '@/components/buttons/Button';
 import ClassifyResult from '@/components/ClassifyResult';
 import { toastStyle, toastStyleLight } from '@/components/constant/toast';
@@ -101,7 +102,12 @@ const Classify: NextPage = () => {
       <Seo templateTitle='Classify Trash' />
       <main>
         <section>
-          <div className='layout flex min-h-screen flex-col items-center justify-center gap-y-40 text-center'>
+          <div className='layout flex min-h-screen flex-col items-center justify-center gap-y-16 text-center'>
+            <h1>
+              <Accent className='dark:from-primary-100 dark:via-green-100/70 dark:to-emerald-100'>
+                Choose from your trash
+              </Accent>
+            </h1>
             <form onSubmit={handleSubmit}>
               <DragNDrop
                 onChange={onFileChange}
