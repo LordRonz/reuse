@@ -9,6 +9,7 @@ import Swal from 'sweetalert2';
 import withReactContent from 'sweetalert2-react-content';
 
 import Button from '@/components/buttons/Button';
+import ClassifyResult from '@/components/ClassifyResult';
 import { toastStyle, toastStyleLight } from '@/components/constant/toast';
 import DragNDrop from '@/components/DragNDrop';
 import Layout from '@/components/layout/Layout';
@@ -79,8 +80,7 @@ const Classify: NextPage = () => {
             ? data[0].className
             : data[1].className;
         MeSwal.fire({
-          title: 'Result',
-          text: `It is ${result}!`,
+          html: <ClassifyResult type={result} />,
           color: theme === 'dark' ? '#ddd' : '#111',
           confirmButtonColor: '#71f397',
           background: theme === 'dark' ? '#111' : '#ddd',
