@@ -3,7 +3,7 @@ import type { NextPage } from 'next';
 import { useTheme } from 'next-themes';
 import { useCallback, useState } from 'react';
 import { useDropzone } from 'react-dropzone';
-import toast, { Toaster } from 'react-hot-toast';
+import toast from 'react-hot-toast';
 import { FiUpload } from 'react-icons/fi';
 import Swal from 'sweetalert2';
 import withReactContent from 'sweetalert2-react-content';
@@ -11,9 +11,9 @@ import withReactContent from 'sweetalert2-react-content';
 import Accent from '@/components/Accent';
 import Button from '@/components/buttons/Button';
 import ClassifyResult from '@/components/ClassifyResult';
-import { toastStyle, toastStyleLight } from '@/components/constant/toast';
 import DragNDrop from '@/components/DragNDrop';
 import Layout from '@/components/layout/Layout';
+import CustomLink from '@/components/links/CustomLink';
 import Seo from '@/components/Seo';
 
 const SUPPORTED_IMAGE_TYPES = ['image/jpeg', 'image/png', 'image/gif'];
@@ -121,20 +121,12 @@ const Classify: NextPage = () => {
                 <Button type='submit'>Submit</Button>
               </div>
             </form>
+            <CustomLink href='/classifycam' className='text-green-100'>
+              Use your camera instead
+            </CustomLink>
           </div>
         </section>
       </main>
-      <Toaster
-        toastOptions={{
-          style: theme === 'dark' ? toastStyle : toastStyleLight,
-          loading: {
-            iconTheme: {
-              primary: '#71f397',
-              secondary: 'black',
-            },
-          },
-        }}
-      />
     </Layout>
   );
 };
