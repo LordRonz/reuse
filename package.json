@@ -37,7 +37,7 @@
     "tailwind-merge": "^1.2.1"
   },
   "devDependencies": {
-    "@commitlint/cli": "^16.2.3",
+    "@commitlint/cli": "^16.2.4",
     "@commitlint/config-conventional": "^16.2.4",
     "@types/formidable": "^2.0.4",
     "@types/google.maps": "^3.48.7",
