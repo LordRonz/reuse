@@ -229,10 +229,10 @@
   dependencies:
     fast-deep-equal "^3.1.3"
 
-"@googlemaps/react-wrapper@^1.1.33":
-  version "1.1.33"
-  resolved "https://registry.yarnpkg.com/@googlemaps/react-wrapper/-/react-wrapper-1.1.33.tgz#85ab82c1fba81ac5e9f18a4e70564ddcb2282cdc"
-  integrity sha512-/8+8rxQAGy8aURmTJlV0PuJVMG6X+knOICfbMrNu/ZE9ogGhdJqiE0l/6z5g3m4J6uEaImx9zFeSap97C56NdA==
+"@googlemaps/react-wrapper@^1.1.34":
+  version "1.1.34"
+  resolved "https://registry.yarnpkg.com/@googlemaps/react-wrapper/-/react-wrapper-1.1.34.tgz#c9ebd3ab6f728c05fccf0b3d481a9faa015ce715"
+  integrity sha512-wxKTS6EF5P76Z+TO954CY3WK4kIDC1L/7QgKPsPo55ZTfpk176tS+7jkW1HwxGWebnv3+DMMMoMMl00ZNMzdmA==
   dependencies:
     "@googlemaps/js-api-loader" "^1.13.2"
 
@@ -2653,10 +2653,10 @@ prelude-ls@^1.2.1:
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.2.1.tgz#debc6489d7a6e6b0e7611888cec880337d316396"
   integrity sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==
 
-prettier-plugin-tailwindcss@^0.1.10:
-  version "0.1.10"
-  resolved "https://registry.yarnpkg.com/prettier-plugin-tailwindcss/-/prettier-plugin-tailwindcss-0.1.10.tgz#437bd0757819c8393fc780e17e50e8a7518e2a6b"
-  integrity sha512-ooDGNuXUjgCXfShliVYQ6+0iXqUFXn+zdNInPe0WZN9qINt9srbLGFGY5jeVL4MXtY20/4S8JaBcd8l6N6NfCQ==
+prettier-plugin-tailwindcss@^0.1.11:
+  version "0.1.11"
+  resolved "https://registry.yarnpkg.com/prettier-plugin-tailwindcss/-/prettier-plugin-tailwindcss-0.1.11.tgz#6112da68d9d022b7f896d35c070464931c99c35f"
+  integrity sha512-a28+1jvpIZQdZ/W97wOXb6VqI762MKE/TxMMuibMEHhyYsSxQA8Ek30KObd5kJI2HF1ldtSYprFayXJXi3pz8Q==
 
 prettier@^2.6.2:
   version "2.6.2"
