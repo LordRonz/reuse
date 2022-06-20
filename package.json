@@ -16,7 +16,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@googlemaps/react-wrapper": "^1.1.33",
+    "@googlemaps/react-wrapper": "^1.1.35",
     "axios": "^0.26.1",
     "clsx": "^1.1.1",
     "formidable": "^2.0.1",
