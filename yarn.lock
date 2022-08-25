@@ -375,10 +375,10 @@
   dependencies:
     "@types/node" "*"
 
-"@types/google.maps@^3.48.8":
-  version "3.48.8"
-  resolved "https://registry.yarnpkg.com/@types/google.maps/-/google.maps-3.48.8.tgz#54025ff2352122283a7ccfc1213ab7fcc1dde838"
-  integrity sha512-//H3NjhH8GqWOdSecsodAc1FtcGWZKTi45q59Ym/sV0F8bituz4JcPicLRhSvdSLi9fjZKNUUdjXwgJeWv/M5w==
+"@types/google.maps@^3.50.0":
+  version "3.50.0"
+  resolved "https://registry.yarnpkg.com/@types/google.maps/-/google.maps-3.50.0.tgz#48cbb7176e3403ae79b45017de5cf9816ac8b181"
+  integrity sha512-8SQJKelTTt2ah7WDNWd2DZgUrqNaZw6sAFiTxmEtFql5Mzx2qfBIUdp5XwC4JbYy/AjJQT5wEBLwtwuOjBTOYg==
 
 "@types/json-schema@^7.0.9":
   version "7.0.9"
